@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome2');
 });
+
+
 
 //auth route for both
 Route::group(['middleware' => ['auth']], function() {
