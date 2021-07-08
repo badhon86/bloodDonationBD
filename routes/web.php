@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome2');
 });
 
-
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //auth route for both
 Route::group(['middleware' => ['auth']], function() {
