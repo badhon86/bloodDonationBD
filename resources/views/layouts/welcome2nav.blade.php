@@ -933,7 +933,7 @@
             </ul>
           </li>
           <li><a href="#contact">যোগাযোগ করুন</a></li>
-          <li><a href="#">ডোনার নিবন্ধন</a></li>
+          <li><a href="{{ route('donar') }}">ডোনার নিবন্ধন</a></li>
           {{-- <li><a href="#">এডমিন</a></li> --}}
 
           <li><a href="{{ route('login') }}" target="_blank" >লগইন</a></li>
