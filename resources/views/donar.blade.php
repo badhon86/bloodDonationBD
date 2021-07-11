@@ -1,11 +1,13 @@
 @extends('layouts.welcome2nav')
 @section('main')
 
-
+<br>
 <!-- ======= donar Section ======= -->
 <section id="pricing" class="pricing">
     <div class="container" data-aos="fade-up">
-
+        <br>
+        <br>
+        <br>
       <div class="section-title">
         <h2>রক্তদাতা</h2>
         <h3>রক্তদাতাদের <span>তালিকা</span></h3>
