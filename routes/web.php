@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/donar', [App\Http\Controllers\HomeController::class, 'index'])->name('donar');
-
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('donar'); // event page.
 //auth route for both
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');

@@ -60,7 +60,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#">হোম</a></li>
-          <li class="nav-item {{ url()->current()==route('about') ? 'active' : '' }}"><a href="#about">আমাদের সম্পর্কে</a></li>
+          <li class="nav-item {{ url()->current()==route('donar') ? 'active' : '' }}"><a href="{{route('donar')}}">আমাদের সম্পর্কে</a></li>
           <li><a href="#services">সেবা</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <!-- <li><a href="#team">মেম্বারস</a></li> -->
