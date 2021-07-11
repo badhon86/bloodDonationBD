@@ -15,10 +15,7 @@ class HomeController extends Controller
     {
         return view('donar');
     }
-    public function about()
-    {
-        return view('donar');
-    }
+
     /**
      * Show the form for creating a new resource.
      *
