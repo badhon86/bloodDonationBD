@@ -1026,7 +1026,7 @@
       </div>
       <div class="credits">
 
-         ডেভেলপ বাই_ <a href="https://badhonsarkar.com">মোঃ আশিকুর রহমান
+         ডেভেলপ বাই_ <a href="#">মোঃ আশিকুর রহমান
          </a>
       </div>
     </div>
