@@ -1021,11 +1021,13 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; কপিরাইট <strong><span>বাঁধন সরকার</span></strong>. All Rights Reserved
+        &copy; কপিরাইট <strong><span>মোঃ আশিকুর রহমান
+        </span></strong>. All Rights Reserved
       </div>
       <div class="credits">
 
-         ডেভেলপ বাই_ <a href="https://badhonsarkar.com">বাঁধন সরকার </a>
+         ডেভেলপ বাই_ <a href="https://badhonsarkar.com">মোঃ আশিকুর রহমান
+         </a>
       </div>
     </div>
   </footer><!-- End Footer -->
