@@ -40,11 +40,11 @@
         <i class="icofont-phone"></i> +1 5589 55488 55
       </div>
       <div class="social-links">
-        <a href="{{ route('donar') }}" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="{{ route('donar') }}" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="{{ route('donar') }}" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="{{ route('donar') }}" class="skype"><i class="icofont-skype"></i></a>
-        <a href="{{ route('donar') }}" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
           <li class="drop-down"><a>রক্তদাতা</a>
             <ul>
               <li><a class="">বিভাগ নির্বাচন করুন </a></li>
-              <li class="drop-down"><a href="{{ route('donar') }}">ঢাকা</a>
+              <li class="drop-down"><a href="{{ route('donarlist') }}">ঢাকা</a>
                 <ul>
                   <li><a>জেলা নির্বাচন করুন </a></li>
                   <li class="drop-down"><a href="{{ route('donar') }}">ঢাকা</a>
