@@ -116,7 +116,7 @@
           -webkit-border-radius: 5px;
           -moz-border-radius: 5px;
           border-radius: 5px;
-          background-color: #0d5a1a;
+          background-color: #007944;
           font-size: 16px;
           color: #fff;
           cursor: pointer;
@@ -142,7 +142,7 @@
 
         <div class="testbox">
           <form action="/">
-            <h2>রক্ত দাতা নিবন্ধন ফর্ম</h2>
+            <h2>রক্তদাতার নিবন্ধন ফর্ম</h2>
             <h5>ব্যক্তিগত তথ্য</h5>
             <div class="item">
               <p>আপনার পুরো নাম (নিবন্ধিত হিসাবে)</p>
@@ -160,7 +160,7 @@
               </select>
             </div>
             <div class="item">
-                <p>জন্ম তারিখ সিলেক্ট করুন</p>
+                <p>জন্ম তারিখ নির্বাচন করুন</p>
                 <input type="date" name="name" required/>
                 <i class="fas fa-calendar-alt"></i>
               </div>
