@@ -9,7 +9,7 @@
       </h1>
       <h2></h2>
       <div class="d-flex">
-        <a href="donar.html" class="btn-get-started scrollto">এখানে ক্লিক করুন</a>
+        <a href="{{route('donar')}}" class="btn-get-started scrollto">এখানে ক্লিক করুন</a>
         <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a> -->
       </div>
       <br>

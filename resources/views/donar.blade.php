@@ -40,7 +40,7 @@
           padding: 3px;
           }
           form {
-          width: 77%;
+          width: 70%;
           padding: 20px;
           background: #fff;
           box-shadow: 0 2px 5px #ccc;
@@ -160,6 +160,12 @@
               </select>
             </div>
             <div class="item">
+                <p>জন্ম তারিখ সিলেক্ট করুন</p>
+                <input type="date" name="name" required/>
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+
+            <div class="item">
               <p>রক্তের গ্রুপ নির্ধারণ করুন </p>
               <select>
                 <option value="1">AB(+ve)</option>
@@ -208,11 +214,6 @@
               </div>
             </div>
             {{-- <h5>Inf</h5> --}}
-            <div class="item">
-              <p>জন্ম তারিখ সিলেক্ট করুন</p>
-              <input type="date" name="name" required/>
-              <i class="fas fa-calendar-alt"></i>
-            </div>
 
             <div class="item">
                 <p>শেষ কবে রক্ত দান করেছেন? </p>
