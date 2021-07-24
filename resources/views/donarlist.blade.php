@@ -20,7 +20,7 @@
 
         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="box featured">
-            <h3>বাঁধন সরকার </h3>
+            <h3> সরকার </h3>
             <h4><sup>গ্রুপ</sup>AB<span> (+ve)</span></h4>
             <ul>
               <li><i class="icofont-ui-call"></i>+880 1797589372</li>
@@ -39,7 +39,7 @@
         </div>
         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="box featured">
-            <h3>বাঁধন সরকার </h3>
+            <h3> সরকার </h3>
             <h4><sup>গ্রুপ</sup>AB<span> (+ve)</span></h4>
             <ul>
               <li><i class="icofont-ui-call"></i>+880 1797589372</li>
@@ -58,7 +58,7 @@
         </div>
         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="box featured">
-            <h3>বাঁধন সরকার </h3>
+            <h3> সরকার </h3>
             <h4><sup>গ্রুপ</sup>AB<span> (+ve)</span></h4>
             <ul>
               <li><i class="icofont-ui-call"></i>+880 1797589372</li>
@@ -77,7 +77,7 @@
         </div>
         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="box featured">
-            <h3>বাঁধন সরকার </h3>
+            <h3> সরকার </h3>
             <h4><sup>গ্রুপ</sup>AB<span> (+ve)</span></h4>
             <ul>
               <li><i class="icofont-ui-call"></i>+880 1797589372</li>
