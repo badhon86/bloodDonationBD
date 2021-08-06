@@ -26,7 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-
+  <link rel="stylesheet" href="{{ asset('assets/css/form.css') }}">
 
 </head>
 
@@ -956,11 +956,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <h4>আমাদের সংবাদ সংকলনে যোগদান করুন</h4>
+            <h4>আমাদের সংগঠনে যোগদান করুন</h4>
 
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="সাবস্ক্রাইব">
-            </form>
+            {{-- <form action="" method="post">
+              <button type="email" name="email"><button type="submit" value="সাবস্ক্রাইব">
+            </form> --}}
           </div>
         </div>
       </div>

@@ -16,132 +16,12 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <style>
-          section, body {
-          min-height: 100%;
-          }
-          body, div, form, input, select, p {
-          padding: 0;
-          margin: 0;
-          outline: none;
-          font-family: Roboto, Arial, sans-serif;
-          font-size: 14px;
-          color: #666;
-          line-height: 22px;
-          }
-          h1 {
-          margin: 15px 0;
-          font-weight: 400;
-          }
-          .testbox {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: inherit;
-          padding: 3px;
-          }
-          form {
-          width: 70%;
-          padding: 20px;
-          background: #fff;
-          box-shadow: 0 2px 5px #ccc;
-          }
-          input, select, textarea {
-          margin-bottom: 10px;
-          border: 1px solid #ccc;
-          border-radius: 3px;
-          }
-          input {
-          width: calc(100% - 10px);
-          padding: 5px;
-          }
-          select {
-          width: 100%;
-          padding: 7px 0;
-          background: transparent;
-          }
-          textarea {
-          width: calc(100% - 6px);
-          }
-          .item {
-          position: relative;
-          margin: 10px 0;
-          }
-          .item:hover p, .item:hover i {
-          color: #1f961b;
-          }
-          input:hover, select:hover, textarea:hover, .preferred-metod label:hover input {
-          box-shadow: 0 0 5px 0 #bbb2b2;
-          }
-          .preferred-metod label {
-          display: block;
-          margin: 5px 0;
-          }
-          .preferred-metod:hover input {
-          box-shadow: none;
-          }
-          .preferred-metod-item input, .preferred-metod-item span {
-          width: auto;
-          vertical-align: middle;
-          }
-          .preferred-metod-item input {
-          margin: 0 5px 0 0;
-          }
-          input[type="date"]::-webkit-inner-spin-button {
-          display: none;
-          }
-          .item i, input[type="date"]::-webkit-calendar-picker-indicator {
-          position: absolute;
-          font-size: 20px;
-          color: #a9a9a9;
-          }
-          .item i {
-          right: 1%;
-          top: 30px;
-          z-index: 1;
-          }
-          [type="date"]::-webkit-calendar-picker-indicator {
-          right: 0;
-          z-index: 2;
-          opacity: 0;
-          cursor: pointer;
-          }
-          .btn-block {
-          margin-top: 20px;
-          text-align: center;
-          }
-          button {
-          width: 150px;
-          padding: 10px;
-          border: none;
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          border-radius: 5px;
-          background-color: #007944;
-          font-size: 16px;
-          color: #fff;
-          cursor: pointer;
-          }
-          button:hover {
-          background-color: #c01010;
-          }
-          @media (min-width: 568px) {
-          .name-item, .city-item {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          }
-          .name-item input, .city-item input {
-          width: calc(50% - 20px);
-          }
-          .city-item select {
-          width: calc(50% - 8px);
-          }
-          }
+
         </style>
 
 
-        <div class="testbox">
-          <form action="/">
+        <div class="testbox1">
+          <forms action="/">
             <h2>রক্তদাতার নিবন্ধন ফর্ম</h2>
             <h5>ব্যক্তিগত তথ্য</h5>
             <div class="item">
@@ -180,7 +60,7 @@
             </div>
             <div class="item">
               <p>ঠিকানা</p>
-              <input type="text" name="name" placeholder="রাস্তার ঠিকানা"/>
+              <input type="text" name="name" placeholder="আপনার ঠিকানা"/>
               {{-- <input type="text" name="name" placeholder="রাস্তার ঠিকানা লাইন 2"/> --}}
               <div class="city-item">
                 <input type="text" name="name" placeholder="আপনার বিভাগ টাইপ করুন" />
@@ -199,7 +79,7 @@
             </div>
             <div class="item">
               <p>ইমেইল </p>
-              <input type="text" name="name" placeholder="আপনার ইমেইল টাইপ করুন"/>
+              <input type="text" name="name" placeholder="আপনার ইমেইল টাইপ করুন(যদি থাকে)"/>
             </div>
             <div class="item">
               <p>ফোন </p>
@@ -247,7 +127,7 @@
             <div class="btn-block">
               <button type="submit" href="/">নিবন্ধন করুন </button>
             </div>
-          </form>
+          </forms>
         </div>
 </section>
 
