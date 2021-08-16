@@ -21,27 +21,28 @@
 
 
         <div class="testbox1">
-          <forms action="/">
+          <forms method="POST" action="/store">
+            @csrf
             <h2>রক্তদাতার নিবন্ধন ফর্ম</h2>
             <h5>ব্যক্তিগত তথ্য</h5>
             <div class="item">
               <p>আপনার পুরো নাম (নিবন্ধিত হিসাবে)</p>
               <div class="name-item">
-                <input type="text" name="name" placeholder="নামের প্রথম অংশ" />
-                <input type="text" name="name" placeholder="নামের শেষাংশ" />
+                <input type="text" name="fist_name" placeholder="নামের প্রথম অংশ" />
+                <input type="text" name="last_name" placeholder="নামের শেষাংশ" />
               </div>
             </div>
             <div class="item">
               <p>সেক্স </p>
               <select>
                 <option value="">সেক্স</option>
-                <option selected value="1">পুরুষ</option>
-                <option value="2">মহিলা</option>
+                <option selected value="male">পুরুষ</option>
+                <option value="female">মহিলা</option>
               </select>
             </div>
             <div class="item">
                 <p>জন্ম তারিখ নির্বাচন করুন</p>
-                <input type="date" name="name" required/>
+                <input type="date" name="birth_date" required/>
                 <i class="fas fa-calendar-alt"></i>
               </div>
 
@@ -60,12 +61,12 @@
             </div>
             <div class="item">
               <p>ঠিকানা</p>
-              <input type="text" name="name" placeholder="আপনার ঠিকানা"/>
+              <input type="text" name="address" placeholder="আপনার ঠিকানা"/>
               {{-- <input type="text" name="name" placeholder="রাস্তার ঠিকানা লাইন 2"/> --}}
               <div class="city-item">
-                <input type="text" name="name" placeholder="আপনার বিভাগ টাইপ করুন" />
-                <input type="text" name="name" placeholder="আপনার জেলা টাইপ করুন" />
-                <input type="text" name="name" placeholder="আপনার উপজেলা টাইপ করুন" />
+                <input type="text" name="division" placeholder="আপনার বিভাগ টাইপ করুন" />
+                <input type="text" name="district" placeholder="আপনার জেলা টাইপ করুন" />
+                <input type="text" name="upozilla" placeholder="আপনার উপজেলা টাইপ করুন" />
 
                 <select>
                   <option value="1">বাংলাদেশী </option>
@@ -79,11 +80,11 @@
             </div>
             <div class="item">
               <p>ইমেইল </p>
-              <input type="text" name="name" placeholder="আপনার ইমেইল টাইপ করুন(যদি থাকে)"/>
+              <input type="text" name="email" placeholder="আপনার ইমেইল টাইপ করুন(যদি থাকে)"/>
             </div>
             <div class="item">
               <p>ফোন </p>
-              <input type="text" name="name" placeholder="আপনার ফোন নম্বর টাইপ করুন"/>
+              <input type="text" name="phone" placeholder="আপনার ফোন নম্বর টাইপ করুন"/>
             </div>
             <div class="item preferred-metod">
               <p>আপনার সাথে যোগাযোগের মাধ্যম</p>
@@ -97,35 +98,11 @@
 
             <div class="item">
                 <p>শেষ কবে রক্ত দান করেছেন? </p>
-                <input type="date" name="name" required/>
+                <input type="date" name="lastdonate" required/>
                 <i class="fas fa-calendar-alt"></i>
               </div>
-            {{-- <div class="item">
-              <p>Name(s) of the person(s) involved</p>
-              <textarea rows="5"></textarea>
-            </div>
-            <div class="item">
-              <p>Please describe your complaint in detail. Include the names of persons, locations, and dates involved. If this complaint is against specific person(s), please list their names and titles</p>
-              <textarea rows="5"></textarea>
-            </div>
-            <div class="item">
-              <p>What attempts have you made to resolve this complaint up to now? Please state who you contacted and what transpired</p>
-              <textarea rows="5"></textarea>
-            </div>
-            <div class="item">
-              <p>Why do you think the complaint was not able to be resolved in your prior attempts?</p>
-              <textarea rows="5"></textarea>
-            </div>
-            <div class="item">
-              <p>What resolution would you consider fair? What resolution do you seek?</p>
-              <textarea rows="5"></textarea>
-            </div>
-            <div class="item">
-              <p>Any other information you want to provide?</p>
-              <textarea rows="5"></textarea>
-            </div> --}}
             <div class="btn-block">
-              <button type="submit" href="/">নিবন্ধন করুন </button>
+              <input type="submit"name="insert" value="নিবন্ধন করুন" class="btn btn-primary">নিবন্ধন করুন </input>
             </div>
           </forms>
         </div>

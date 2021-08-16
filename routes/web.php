@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/donar', [App\Http\Controllers\HomeController::class, 'index'])->name('donar'); //donar regi page
+Route::get('/donar/store', [App\Http\Controllers\HomeController::class, 'store'])->name('donar'); //donar regi page
 Route::get('/donarlist', [App\Http\Controllers\HomeController::class, 'donarList'])->name('donarlist'); //donar list page
 //Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('donar'); // event page.
 
