@@ -18,7 +18,7 @@ class CreateDonarformsTable extends Migration
             $table->string('fist_name');
             $table->string('last_name');
             $table->string('gender');
-            $table->string('birth_date');
+            $table->date('birth_date');
             $table->string('blood_group');
             $table->string('address');
             $table->string('division');
@@ -27,7 +27,7 @@ class CreateDonarformsTable extends Migration
             $table->string('nationality');
             $table->string('email');
             $table->string('phone');
-            $table->string('lastdonate');
+            $table->date('lastdonate');
             $table->timestamps();
         });
     }

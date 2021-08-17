@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use session;
+use Illuminate\Support\Facades\DB;
 use App\Models\donarform;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,9 @@ class HomeController extends Controller
 
     public function donarList()
     {
-        return view('donarlist');
+        $gdData = DB::table('donarforms')->get();
+        return view('donarlist',compact('gdData'));
+        // return view('donarlist');
     }
 
     /**
@@ -40,7 +43,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-  dd($request->all());
+//   dd($request->all());
 
         $this->validate($request, [
             'fist_name' => 'required',

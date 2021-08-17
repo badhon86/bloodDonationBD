@@ -1,7 +1,7 @@
 /* section, body {
     min-height: 100%;
     } */
-    forms,  select, p {
+    form,  select, p {
     padding: 0;
     margin: 0;
     outline: none;
@@ -21,7 +21,7 @@
     height: inherit;
     padding: 3px;
     }
-    forms {
+    form {
     width: 82%;
     padding: 40px;
     background: rgb(255, 255, 255);

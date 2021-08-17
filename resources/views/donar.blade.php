@@ -21,9 +21,7 @@
 
 
         <div class="testbox1">
-            @if (Session ::has('success'))
-            <div class="div alert alert-success">{{ Session::get('success') }}</div>
-           @endif
+
           <form method="post" action="{{route('store')}}">
             @csrf
             <h2>রক্তদাতার নিবন্ধন ফর্ম</h2>
@@ -45,21 +43,21 @@
             </div>
             <div class="item">
                 <p>জন্ম তারিখ নির্বাচন করুন</p>
-                <input type="text" name="birth_date" required/>
+                <input type="date" name="birth_date" required/>
                 <i class="fas fa-calendar-alt"></i>
               </div>
 
             <div class="item">
               <p>রক্তের গ্রুপ নির্ধারণ করুন </p>
               <select name="blood_group">
-                <option value="AB">AB(+ve)</option>
-                <option value="AB">AB(-ve)</option>
-                <option value="AB">A(+ve)</option>
-                <option value="AB">B(+ve)</option>
-                <option value="AB">O(+ve)</option>
-                <option value="AB">A(-ve)</option>
-                <option value="AB">B(-ve)</option>
-                <option value="AB">O(-ve)</option>
+                <option value="AB(+ve)">AB(+ve)</option>
+                <option value="AB(-ve)">AB(-ve)</option>
+                <option value="A(+ve)">A(+ve)</option>
+                <option value="B(+ve)">B(+ve)</option>
+                <option value="O(+ve)">O(+ve)</option>
+                <option value="A(-ve)">A(-ve)</option>
+                <option value="B(-ve)">B(-ve)</option>
+                <option value="O(-ve)">O(-ve)</option>
               </select>
             </div>
             <div class="item">
@@ -101,12 +99,15 @@
 
             <div class="item">
                 <p>শেষ কবে রক্ত দান করেছেন? </p>
-                <input type="text" name="lastdonate" required/>
+                <input type="date" name="lastdonate" required/>
                 <i class="fas fa-calendar-alt"></i>
               </div>
-            {{-- <div class="button"> --}}
+            <div class="btn-block">
               <button type="submit">নিবন্ধন করুন</button>
-            {{-- </div> --}}
+            </div>
+            @if (Session ::has('success'))
+            <div class="div alert alert-success">{{ Session::get('success') }}</div>
+           @endif
           </form>
         </div>
 </section>
