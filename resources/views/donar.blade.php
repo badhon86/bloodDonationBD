@@ -21,20 +21,23 @@
 
 
         <div class="testbox1">
-          <forms method="POST" action="/store">
+            @if (Session ::has('success'))
+            <div class="div alert alert-success">{{ Session::get('success') }}</div>
+           @endif
+          <form method="post" action="{{route('store')}}">
             @csrf
             <h2>রক্তদাতার নিবন্ধন ফর্ম</h2>
             <h5>ব্যক্তিগত তথ্য</h5>
             <div class="item">
               <p>আপনার পুরো নাম (নিবন্ধিত হিসাবে)</p>
               <div class="name-item">
-                <input type="text" name="fist_name" placeholder="নামের প্রথম অংশ" />
-                <input type="text" name="last_name" placeholder="নামের শেষাংশ" />
+                <input type="text" name="fist_name" placeholder="নামের প্রথম অংশ" required/>
+                <input type="text" name="last_name" placeholder="নামের শেষাংশ" required />
               </div>
             </div>
             <div class="item">
               <p>সেক্স </p>
-              <select>
+              <select name="gender">
                 <option value="">সেক্স</option>
                 <option selected value="male">পুরুষ</option>
                 <option value="female">মহিলা</option>
@@ -42,34 +45,34 @@
             </div>
             <div class="item">
                 <p>জন্ম তারিখ নির্বাচন করুন</p>
-                <input type="date" name="birth_date" required/>
+                <input type="text" name="birth_date" required/>
                 <i class="fas fa-calendar-alt"></i>
               </div>
 
             <div class="item">
               <p>রক্তের গ্রুপ নির্ধারণ করুন </p>
-              <select>
-                <option value="1">AB(+ve)</option>
-                <option value="2">AB(-ve)</option>
-                <option value="3">A(+ve)</option>
-                <option value="4">B(+ve)</option>
-                <option value="5">O(+ve)</option>
-                <option value="6">A(-ve)</option>
-                <option value="7">B(-ve)</option>
-                <option value="8">O(-ve)</option>
+              <select name="blood_group">
+                <option value="AB">AB(+ve)</option>
+                <option value="AB">AB(-ve)</option>
+                <option value="AB">A(+ve)</option>
+                <option value="AB">B(+ve)</option>
+                <option value="AB">O(+ve)</option>
+                <option value="AB">A(-ve)</option>
+                <option value="AB">B(-ve)</option>
+                <option value="AB">O(-ve)</option>
               </select>
             </div>
             <div class="item">
               <p>ঠিকানা</p>
-              <input type="text" name="address" placeholder="আপনার ঠিকানা"/>
+              <input type="text" name="address" placeholder="আপনার ঠিকানা" required/>
               {{-- <input type="text" name="name" placeholder="রাস্তার ঠিকানা লাইন 2"/> --}}
               <div class="city-item">
-                <input type="text" name="division" placeholder="আপনার বিভাগ টাইপ করুন" />
-                <input type="text" name="district" placeholder="আপনার জেলা টাইপ করুন" />
-                <input type="text" name="upozilla" placeholder="আপনার উপজেলা টাইপ করুন" />
+                <input type="text" name="division" placeholder="আপনার বিভাগ টাইপ করুন" required/>
+                <input type="text" name="district" placeholder="আপনার জেলা টাইপ করুন" required/>
+                <input type="text" name="upozilla" placeholder="আপনার উপজেলা টাইপ করুন" required/>
 
-                <select>
-                  <option value="1">বাংলাদেশী </option>
+                <select name="nationality">
+                  <option value="bangladeshi">বাংলাদেশী </option>
                   {{-- <option value="1">Russia</option>
                   <option value="2">Germany</option>
                   <option value="3">France</option>
@@ -84,27 +87,27 @@
             </div>
             <div class="item">
               <p>ফোন </p>
-              <input type="text" name="phone" placeholder="আপনার ফোন নম্বর টাইপ করুন"/>
+              <input type="text" name="phone" placeholder="আপনার ফোন নম্বর টাইপ করুন" required/>
             </div>
-            <div class="item preferred-metod">
+            {{-- <div class="item preferred-metod">
               <p>আপনার সাথে যোগাযোগের মাধ্যম</p>
               <div class="preferred-metod-item">
                 <label><input type="checkbox" name="name"> <span>ইমেইল</span></label>
                 <label><input type="checkbox" name="name"> <span>ফোন</span></label>
-                {{-- <label><input type="checkbox" name="name"> <span>U.S. Mail</span></label> --}}
+                <label><input type="checkbox" name="name"> <span>U.S. Mail</span></label>
               </div>
-            </div>
+            </div> --}}
             {{-- <h5>Inf</h5> --}}
 
             <div class="item">
                 <p>শেষ কবে রক্ত দান করেছেন? </p>
-                <input type="date" name="lastdonate" required/>
+                <input type="text" name="lastdonate" required/>
                 <i class="fas fa-calendar-alt"></i>
               </div>
-            <div class="btn-block">
-              <input type="submit"name="insert" value="নিবন্ধন করুন" class="btn btn-primary">নিবন্ধন করুন </input>
-            </div>
-          </forms>
+            {{-- <div class="button"> --}}
+              <button type="submit">নিবন্ধন করুন</button>
+            {{-- </div> --}}
+          </form>
         </div>
 </section>
 

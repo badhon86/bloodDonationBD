@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use session;
 use App\Models\donarform;
 use Illuminate\Http\Request;
 
@@ -39,25 +40,41 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
+  dd($request->all());
 
-        $donarforms=new donarforms;
-        $donarforms->fist_name=$request->get('fist_name');
-        $donarforms->last_name=$request->get('last_name');
-        $donarforms->gender=$request->get('gender');
-        $donarforms->birth_date=$request->get('birth_date');
-        $donarforms->blood_group=$request->get('blood_group');
-        $donarforms->address=$request->get('address');
-        $donarforms->division=$request->get('division');
-        $donarforms->district=$request->get('district');
-        $donarforms->upozilla=$request->get('upozilla');
-        $donarforms->nationality=$request->get('nationality');
-        $donarforms->email=$request->get('email');
-        $donarforms->phone=$request->get('phone');
-        $donarforms->lastdonate=$request->get('lastdonate');
-        $donarforms->save();
-
-        echo "<h1>Data add successfully.....</h1>";
-
+        $this->validate($request, [
+            'fist_name' => 'required',
+            'last_name' =>'required',
+            'gender' =>'required',
+            'birth_date' => 'required',
+            'blood_group' => 'required',
+            'address' =>'required',
+            'division' =>'required',
+            'district' => 'required',
+            'upozilla' => 'required',
+            'nationality' =>'required',
+            'email' =>'required',
+            'phone' => 'required',
+            'lastdonate' => 'required',
+        ]);
+        donarform::create([
+            'fist_name' => $request->fist_name,
+            'last_name' =>$request->last_name,
+            'gender' =>$request->gender,
+            'birth_date' => $request->birth_date,
+            'blood_group' =>$request->blood_group,
+            'address' =>$request->address,
+            'division' =>$request->division,
+            'district' => $request->district,
+            'upozilla' => $request->upozilla,
+            'nationality' =>$request->nationality,
+            'email' =>$request->email,
+            'phone' => $request->phone,
+            'lastdonate' => $request->lastdonate,
+        ]);
+        $request->session()->flash('success', 'donar registered successfully');
+        return redirect()->back();
+// dd('$donarforms');
     }
 
     /**
